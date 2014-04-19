@@ -1,0 +1,272 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,300italic,100italic,400italic);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+button.button {
+  background-color: rgba(38, 52, 126, 0.3);
+  border: 0.2em solid #233071;
+  height: 4em;
+  width: 16em;
+  color: white;
+  text-decoration: none;
+  cursor: pointer; }
+
+button.button:hover {
+  background-color: #233071; }
+
+header h1 {
+  display: inline-block; }
+
+.expanding {
+  margin: 3em 0px 0px 0px;
+  list-style: none;
+  display: block; }
+
+.expand-button {
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer; }
+
+.expand-button:after {
+  position: absolute;
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.open .expand-button:after {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  transform: rotate(135deg); }
+
+.expand-map {
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer; }
+
+.expand-map:after {
+  position: absolute;
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.open .expand-map:after {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  transform: rotate(135deg); }
+
+.moreinfo {
+  overflow: hidden;
+  max-height: 50px;
+  margin: 0px 0px 10px;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.moreinfo p {
+  color: white; }
+
+.map {
+  color: white;
+  overflow: hidden;
+  max-height: 50px;
+  margin: 0px 0px 10px;
+  display: block;
+  width: 540px;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.map {
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s; }
+
+.open {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  max-height: 400px; }
+
+.open p {
+  color: white; }
+
+body {
+  width: 100%;
+  background-image: url(../images/backgroundindex.jpg);
+  background-attachment: fixed;
+  background-size: cover; }
+
+.home-small {
+  margin-top: 2.2em; }
+
+.homeArt-small {
+  padding: 0; }
+
+nav.title {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  nav.title:last-child {
+    margin-right: 0; }
+
+.locationTitle {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .locationTitle:last-child {
+    margin-right: 0; }
+
+nav h1 {
+  float: left; }
+
+nav a {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 7.87811%;
+  position: relative;
+  float: left;
+  margin-top: 2.8em;
+  margin-left: 2em; }
+  nav a:last-child {
+    margin-right: 0; }
+
+.wrapper {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em; }
+  .wrapper:before, .wrapper:after {
+    content: " ";
+    display: table; }
+  .wrapper:after {
+    clear: both; }
+  .wrapper .artista {
+    background-color: #233071; }
+  .wrapper .primary {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+    margin-bottom: 4em;
+    background-color: #233071;
+    padding: 1em; }
+    .wrapper .primary:last-child {
+      margin-right: 0; }
+  .wrapper .secondary {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    margin-bottom: 4em;
+    background-color: #233071;
+    padding-left: 1em; }
+    .wrapper .secondary:last-child {
+      margin-right: 0; }
+
+img.artpic {
+  height: 380px; }
+
+img.mapz {
+  height: 290px; }
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  color: white; }
+
+header h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  color: white; }
+
+h1.locationTitle {
+  font-size: 3em;
+  text-align: center; }
+
+.secondary > h1 {
+  font-size: 2em;
+  margin-top: 1.2em;
+  margin-bottom: 1.3em; }
+
+.secondary > h2 {
+  font-size: 1.4em;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  color: white; }
+
+.secondary > p {
+  margin-bottom: -2em; }
+
+h3, a {
+  font-size: 1.4em;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  color: white; }
+
+a {
+  text-decoration: none;
+  margin: .3em; }
+
+.art {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 4em;
+  padding-left: .1em;
+  padding-right: .1em; }
+
+.home {
+  font-size: 7em; }
+
+.homeArt {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 12.6em;
+  padding-left: .2em;
+  padding-right: .1em; }
+
+.button {
+  font-family: "Roboto";
+  font-weight: 500;
+  color: white;
+  font-size: 1em; }
+
+.expand-button, .expand-map {
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #F50BFF;
+  font-size: 1em; }
+
+p {
+  font-family: "Roboto";
+  font-weight: 300;
+  color: white; }
+
+.title {
+  margin-top: -2em;
+  margin-left: 1em; }
+
+.home-small {
+  font-size: 1.6em; }
+
+.homeArt-small {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.88em;
+  padding-left: .2em;
+  padding-right: .1em; }

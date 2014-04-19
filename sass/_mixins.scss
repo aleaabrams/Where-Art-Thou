@@ -1,0 +1,38 @@
+$button-color: hsla(230,54%,32%, 0.3) !default;
+$button2-color: hsla(230,53%,29%, 1);
+$button-border-color: hsla(230,53%,29%, 1);
+$button-text-color: white;
+$button-border-style: .2em solid $button-border-color !default;
+$button-height: 4em;
+$button-width: 16em;
+$button-padding: .5em .6em;
+$button-text-decoration: none;
+// $button2-color: hsla(230,53%,29%, 1);
+// $button2-border-style: .2em solid $button-border2-color;
+// $button-border2-color: white;
+
+
+
+
+@mixin button ($color: $button-color, $border-style: $button-border-style, $height: $button-height, $width: $button-width, $text-color: $button-text-color, $text-decoration: $button-text-decoration) {
+   background-color: $color;
+   border: $border-style;
+   height: $height;
+   width: $width;
+   color: $text-color;
+   text-decoration: $text-decoration;
+   cursor: pointer;
+}
+
+// @mixin button2 ($color: $button2-color, $border-style: $button2-border-style, $height: $button-height, $width: $button-width, $text-color: $button-text-color, $text-decoration: $button-text-decoration) {
+//    background-color: $color;
+//    border: $border-style;
+//    height: $height;
+//    width: $width;
+//    color: $text-color;
+//    text-decoration: $text-decoration;
+//    cursor: pointer;
+// }
+
+
+

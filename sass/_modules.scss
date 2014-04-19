@@ -1,0 +1,124 @@
+@import "mixins";
+
+// button elements //
+button.button{
+  @include button;
+
+}
+
+button.button:hover{
+   background-color: $button-border-color;
+}
+
+header h1{
+   display: inline-block;
+}
+
+
+// articles
+
+
+// body {
+//     font-size:14px;
+//     font-family:"Lato", "Helvetica Neue", sans-serif;
+//     color:#898494;
+//     line-height:1.6em;
+// }
+
+
+.expanding {
+    margin:3em 0px 0px 0px;
+    list-style:none;
+    display:block;
+}
+
+.expand-button {
+   font-size:1em;
+   font-weight:700;
+   cursor:pointer;
+}
+
+.expand-button:after {
+    position:absolute;
+    display:inline-block;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+}
+
+.open .expand-button:after {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.expand-map {
+   font-size:1em;
+   // line-height:40px;
+   font-weight:700;
+   cursor:pointer;
+}
+
+.expand-map:after {
+    position:absolute;
+    display:inline-block;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+}
+
+.open .expand-map:after {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+
+.moreinfo {
+    overflow:hidden;
+    max-height:50px;
+    margin:0px 0px 10px;
+    display:block;
+    // width:240px;
+    position:relative;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.moreinfo p {
+   color:white;
+   // margin:0px 0px 0.5em;
+}
+
+.map {
+   color: white;
+    overflow:hidden;
+   max-height:50px;
+    margin:0px 0px 10px;
+    display:block;
+    width:540px;
+    position:relative;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.map {
+   // margin:0px 0px 0.5em;
+   -webkit-transition: color 0.5s;
+   -moz-transition: color 0.5s;
+   transition: color 0.5s;
+}
+
+.open {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    max-height:400px;
+}
+
+.open p {
+   color:white;
+}
+

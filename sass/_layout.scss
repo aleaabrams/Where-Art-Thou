@@ -1,0 +1,68 @@
+body{
+   width: 100%;
+   background-image: url(../images/backgroundindex.jpg);
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+.home-small{
+   margin-top: 2.2em;
+}
+
+.homeArt-small{
+   padding: 0;
+}
+
+nav.title{
+   @include span-columns(2);
+   // float: left;
+
+}
+
+.locationTitle{
+   @include span-columns(12);
+}
+
+nav h1{
+   // position: relative;
+   float: left;
+}
+
+nav a{
+   @include span-columns(1.2);
+   position: relative;
+   float:left;
+   margin-top: 2.8em;
+   margin-left: 2em;
+}
+
+
+
+.wrapper {
+   @include outer-container;
+   padding: 1em;
+   .artista{
+      background-color: hsla(230,53%,29%, 1);
+   }
+   .primary {
+      @include span-columns(7);
+      margin-bottom: 4em;
+      background-color: hsla(230,53%,29%, 1);
+      padding: 1em;
+   }
+   .secondary {
+      @include span-columns(5);
+      margin-bottom: 4em;
+      background-color: hsla(230,53%,29%, 1);
+      padding-left: 1em;
+       }
+}
+
+img.artpic{
+   height: 380px;
+}
+
+img.mapz{
+   height: 290px;
+}
+

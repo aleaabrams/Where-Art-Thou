@@ -7,9 +7,7 @@ $button-height: 4em;
 $button-width: 16em;
 $button-padding: .5em .6em;
 $button-text-decoration: none;
-// $button2-color: hsla(230,53%,29%, 1);
-// $button2-border-style: .2em solid $button-border2-color;
-// $button-border2-color: white;
+
 
 
 
@@ -24,15 +22,13 @@ $button-text-decoration: none;
    cursor: pointer;
 }
 
-// @mixin button2 ($color: $button2-color, $border-style: $button2-border-style, $height: $button-height, $width: $button-width, $text-color: $button-text-color, $text-decoration: $button-text-decoration) {
-//    background-color: $color;
-//    border: $border-style;
-//    height: $height;
-//    width: $width;
-//    color: $text-color;
-//    text-decoration: $text-decoration;
-//    cursor: pointer;
-// }
 
 
+$desktop: new-breakpoint(min-width 1085px);
+$desksmall: new-breakpoint(min-width 731px) and (max-width 1084px);
+$medium: new-breakpoint(min-width 321px) and (max-width 731px);
+$small: new-breakpoint(max-width 320px);
+
+
+$smaller: new-breakpoint(min-width 321px) and (max-width 500px);
 

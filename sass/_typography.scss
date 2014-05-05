@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic);
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,300italic,100italic,400italic);
+@import "mixins";
 
 $header-art: "Playfair Display", serif;
 $h1: "Oswald", sans-serif;
@@ -8,21 +9,19 @@ $home-font-size: 7em;
 $home-nav-font-size: 1.6em;
 $button-text: "Roboto";
 
+
+
+
 h1{
    font-family: $h1;
    font-weight: 700;
    color: white;
 }
 
-header h1{
-   font-family: $h1;
-   font-weight: 700;
-   color: white;
-}
-h1.locationTitle{
-   font-size: 3em;
-   text-align: center;
-}
+h1.locationTitle {
+     font-size: 3em;
+     text-align: center;
+   }
 
 .secondary > h1{
    font-size: 2em;
@@ -37,10 +36,14 @@ h1.locationTitle{
    color: white;
 }
 
-.secondary > p{
+p.brief{
    margin-bottom: -2em;
 }
 
+.open p {
+   color:white;
+   margin-left: 2em;
+}
 
 h3{
    font-size: 1.4em;
@@ -65,17 +68,61 @@ a{
    padding-right: .1em;
 }
 
-.home{
-   font-size: $home-font-size;
+
+.home {
+  @include media($desktop) {
+  font-size: $home-font-size;
 }
+  @include media($desksmall) {
+   font-size: $home-font-size / 1.4;
+  }
+  @include media($medium) {
+   font-size: $home-font-size / 2;
+  }
+  @include media($smaller) {
+    font-size: $home-font-size / 3;
+    margin-bottom: 4em;
+  }
+  @include media($small) {
+   font-size: $home-font-size / 4.2;
+  }
+
+}
+
+// $desksmall: @media all and (max-width: 1074px) and (min-width: 700px)
+// .home{
+//    $desktop{
+//       font-size: $home-font-size;
+//    }
+//    $desksmall{
+//       font-size: $home-font-size / 1.4;
+//    }
+// }
 
 .homeArt{
    font-family: $header-art;
    font-weight: 900;
    font-style: italic;
-   font-size: $home-font-size * 1.8;
    padding-left: .2em;
-   padding-right: .1em;
+      padding-right: .1em;
+   @include media($desktop) {
+      font-size: $home-font-size * 1.8;
+   }
+   @include media($desksmall) {
+      font-size: $home-font-size;
+   }
+   @include media($medium) {
+      font-size: $home-font-size / 1.4;
+      margin-top: 1.4em;
+   }
+   @include media($smaller) {
+    font-size: $home-font-size / 2;
+  }
+   @include media($small) {
+      font-size: $home-font-size / 3.1;
+      margin-top: 2.3em;
+      margin-bottom: 3em;
+   }
 }
 
 .button{

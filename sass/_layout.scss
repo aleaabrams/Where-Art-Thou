@@ -1,3 +1,5 @@
+@import "mixins";
+
 body{
    width: 100%;
    background-image: url(../images/backgroundindex.jpg);
@@ -13,31 +15,127 @@ body{
    padding: 0;
 }
 
-nav.title{
-   @include span-columns(2);
-   // float: left;
-
-}
 
 .locationTitle{
    @include span-columns(12);
 }
 
+//nav
+nav.title{
+   @include media($desktop) {
+      @include span-columns(2);
+   }
+   @include media($desksmall) {
+      @include span-columns(2);
+   }
+   @include media($medium) {
+      @include span-columns(12);
+      text-align: center;
+   }
+   @include media ($small) {
+      @include span-columns(12);
+   }
+}
+
+// .container{
+//    text-align: center;
+// }
+
+.question{
+   @include span-columns(12);
+}
+
+button.button{
+     @include media($desktop) {
+      @include span-columns(3.8);
+      margin: .9em;
+   }
+   @include media($desksmall) {
+      @include span-columns(3.6);
+      margin: 1em;
+      // margin-right: 1em;
+   }
+   @include media($medium) {
+      @include span-columns(10.4);
+      text-align: center;
+      margin: .2em;
+   }
+   @include media ($small) {
+      @include span-columns(10.4);
+      margin: .2em;
+   }
+}
+
+
+p.news{
+   @include span-columns(12);
+}
+
+
+
 nav h1{
-   // position: relative;
    float: left;
 }
 
 nav a{
-   @include span-columns(1.2);
-   position: relative;
-   float:left;
-   margin-top: 2.8em;
-   margin-left: 2em;
+   @include media($desktop) {
+      @include span-columns(1);
+      position: relative;
+      float:left;
+      margin-top: 2.8em;
+      margin-left: -2em;
+   }
+   @include media($desksmall) {
+      @include span-columns(1);
+      position: relative;
+      float:left;
+      margin-top: 2.8em;
+      margin-left: 1em;
+   }
+   @include media($medium) {
+      @include span-columns(2);
+   }
+   @include media($small) {
+      @include span-columns(6);
+      margin-top:-1em;
+      margin-left:0;
+   }
+}
+
+nav a.new{
+   @include media($desktop) {
+      @include span-columns(2);
+      position: relative;
+      float:left;
+      margin-top: 2.8em;
+      margin-left: 3em;
+   }
+   @include media($desksmall) {
+      @include span-columns(2);
+      position: relative;
+      float:left;
+      margin-top: 2.8em;
+      margin-left: 3em;
+   }
+   @include media($medium) {
+      @include span-columns(2);
+      margin-top: 2.8em;
+      margin-left:1em;
+   }
+   @include media($small) {
+      @include span-columns(6);
+      margin-top:-1em;
+      margin-left:0;
+   }
 }
 
 
 
+
+
+
+
+// bourbon neat grid
 .wrapper {
    @include outer-container;
    padding: 1em;
@@ -49,20 +147,27 @@ nav a{
       margin-bottom: 4em;
       background-color: hsla(230,53%,29%, 1);
       padding: 1em;
+      @include media($smaller) {
+         @include span-columns(11);
+         margin-bottom: 0;
+  }
    }
    .secondary {
       @include span-columns(5);
       margin-bottom: 4em;
       background-color: hsla(230,53%,29%, 1);
       padding-left: 1em;
+      @include media($smaller) {
+         @include span-columns(11);
+         margin-bottom: 2em;
+  }
+       }
+   .open p{
+         @include span-columns(4 of 5);
        }
 }
 
-img.artpic{
-   height: 380px;
+footer {
+   @include span-columns(12);
 }
-
-img.mapz{
-   height: 290px;
-}
-
+// media queries

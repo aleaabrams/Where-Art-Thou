@@ -15,56 +15,36 @@ button.button {
   text-decoration: none;
   cursor: pointer; }
 
+.primary {
+  text-align: center; }
+
 button.button:hover {
   background-color: #233071; }
+
+.mainTitle {
+  text-align: center;
+  padding: .1em;
+  margin-top: -5em;
+  margin-bottom: -6em; }
+
+.where {
+  text-align: center;
+  margin-bottom: 3em; }
 
 header h1 {
   display: inline-block; }
 
 .expanding {
-  margin: 3em 0px 0px 0px;
+  margin: 2.6em 0px 0px 0px;
   list-style: none;
   display: block; }
 
-.expand-button {
-  font-size: 1em;
-  font-weight: 700;
+.expand-button, .expand-map {
   cursor: pointer; }
-
-.expand-button:after {
-  position: absolute;
-  display: inline-block;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s; }
-
-.open .expand-button:after {
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  transform: rotate(135deg); }
-
-.expand-map {
-  font-size: 1em;
-  font-weight: 700;
-  cursor: pointer; }
-
-.expand-map:after {
-  position: absolute;
-  display: inline-block;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s; }
-
-.open .expand-map:after {
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  transform: rotate(135deg); }
 
 .moreinfo {
   overflow: hidden;
   max-height: 50px;
-  margin: 0px 0px 10px;
-  display: block;
   position: relative;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -74,30 +54,27 @@ header h1 {
   color: white; }
 
 .map {
-  color: white;
   overflow: hidden;
   max-height: 50px;
   margin: 0px 0px 10px;
-  display: block;
-  width: 540px;
-  position: relative;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s; }
-
-.map {
-  -webkit-transition: color 0.5s;
-  -moz-transition: color 0.5s;
-  transition: color 0.5s; }
 
 .open {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-  max-height: 400px; }
+  max-height: 700px; }
 
-.open p {
-  color: white; }
+img.mapz {
+  height: 290px; }
+
+img.artpic {
+  width: 100%; }
+
+footer {
+  text-align: center; }
 
 body {
   width: 100%;
@@ -111,14 +88,6 @@ body {
 .homeArt-small {
   padding: 0; }
 
-nav.title {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 14.70196%; }
-  nav.title:last-child {
-    margin-right: 0; }
-
 .locationTitle {
   float: left;
   display: block;
@@ -127,20 +96,184 @@ nav.title {
   .locationTitle:last-child {
     margin-right: 0; }
 
-nav h1 {
-  float: left; }
+@media screen and (min-width: 1085px) {
+  nav.title {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    nav.title:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 1084px) {
+  nav.title {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    nav.title:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 731px) {
+  nav.title {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    text-align: center; }
+    nav.title:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 320px) {
+  nav.title {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    nav.title:last-child {
+      margin-right: 0; } }
 
-nav a {
+.question {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 7.87811%;
-  position: relative;
-  float: left;
-  margin-top: 2.8em;
-  margin-left: 2em; }
-  nav a:last-child {
+  width: 100%; }
+  .question:last-child {
     margin-right: 0; }
+
+@media screen and (min-width: 1085px) {
+  button.button {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 30.0556%;
+    margin: .9em; }
+    button.button:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 1084px) {
+  button.button {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 28.34964%;
+    margin: 1em; }
+    button.button:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 731px) {
+  button.button {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 86.35231%;
+    text-align: center;
+    margin: .2em; }
+    button.button:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 320px) {
+  button.button {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 86.35231%;
+    margin: .2em; }
+    button.button:last-child {
+      margin-right: 0; } }
+
+p.news {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  p.news:last-child {
+    margin-right: 0; }
+
+nav h1 {
+  float: left; }
+
+@media screen and (min-width: 1085px) {
+  nav a {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 6.17215%;
+    position: relative;
+    float: left;
+    margin-top: 2.8em;
+    margin-left: -2em; }
+    nav a:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 1084px) {
+  nav a {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 6.17215%;
+    position: relative;
+    float: left;
+    margin-top: 2.8em;
+    margin-left: 1em; }
+    nav a:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 731px) {
+  nav a {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    nav a:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 320px) {
+  nav a {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-top: -1em;
+    margin-left: 0; }
+    nav a:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 1085px) {
+  nav a.new {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    position: relative;
+    float: left;
+    margin-top: 2.8em;
+    margin-left: 3em; }
+    nav a.new:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 1084px) {
+  nav a.new {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    position: relative;
+    float: left;
+    margin-top: 2.8em;
+    margin-left: 3em; }
+    nav a.new:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 731px) {
+  nav a.new {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    margin-top: 2.8em;
+    margin-left: 1em; }
+    nav a.new:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 320px) {
+  nav a.new {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-top: -1em;
+    margin-left: 0; }
+    nav a.new:last-child {
+      margin-right: 0; } }
 
 .wrapper {
   *zoom: 1;
@@ -165,6 +298,15 @@ nav a {
     padding: 1em; }
     .wrapper .primary:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 500px) {
+      .wrapper .primary {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 91.4702%;
+        margin-bottom: 0; }
+        .wrapper .primary:last-child {
+          margin-right: 0; } }
   .wrapper .secondary {
     float: left;
     display: block;
@@ -175,19 +317,32 @@ nav a {
     padding-left: 1em; }
     .wrapper .secondary:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 500px) {
+      .wrapper .secondary {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 91.4702%;
+        margin-bottom: 2em; }
+        .wrapper .secondary:last-child {
+          margin-right: 0; } }
+  .wrapper .open p {
+    float: left;
+    display: block;
+    margin-right: 5.85151%;
+    width: 78.8297%; }
+    .wrapper .open p:last-child {
+      margin-right: 0; }
 
-img.artpic {
-  height: 380px; }
-
-img.mapz {
-  height: 290px; }
+footer {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  footer:last-child {
+    margin-right: 0; }
 
 h1 {
-  font-family: "Oswald", sans-serif;
-  font-weight: 700;
-  color: white; }
-
-header h1 {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   color: white; }
@@ -207,8 +362,12 @@ h1.locationTitle {
   font-weight: 500;
   color: white; }
 
-.secondary > p {
+p.brief {
   margin-bottom: -2em; }
+
+.open p {
+  color: white;
+  margin-left: 2em; }
 
 h3, a {
   font-size: 1.4em;
@@ -228,16 +387,47 @@ a {
   padding-left: .1em;
   padding-right: .1em; }
 
-.home {
-  font-size: 7em; }
+@media screen and (min-width: 1085px) {
+  .home {
+    font-size: 7em; } }
+@media screen and (max-width: 1084px) {
+  .home {
+    font-size: 5em; } }
+@media screen and (max-width: 731px) {
+  .home {
+    font-size: 3.5em; } }
+@media screen and (max-width: 500px) {
+  .home {
+    font-size: 2.33333em;
+    margin-bottom: 4em; } }
+@media screen and (max-width: 320px) {
+  .home {
+    font-size: 1.66667em; } }
 
 .homeArt {
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-style: italic;
-  font-size: 12.6em;
   padding-left: .2em;
   padding-right: .1em; }
+  @media screen and (min-width: 1085px) {
+    .homeArt {
+      font-size: 12.6em; } }
+  @media screen and (max-width: 1084px) {
+    .homeArt {
+      font-size: 7em; } }
+  @media screen and (max-width: 731px) {
+    .homeArt {
+      font-size: 5em;
+      margin-top: 1.4em; } }
+  @media screen and (max-width: 500px) {
+    .homeArt {
+      font-size: 3.5em; } }
+  @media screen and (max-width: 320px) {
+    .homeArt {
+      font-size: 2.25806em;
+      margin-top: 2.3em;
+      margin-bottom: 3em; } }
 
 .button {
   font-family: "Roboto";
